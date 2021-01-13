@@ -1,5 +1,15 @@
 import React from "react";
+import jumboData from "./data/jumbo";
+import Jumbotron from "./components/jumbotron";
 
 export default function App() {
-  return <div>App</div>;
+  return (
+    <Jumbotron.Container>
+      {jumboData.map((item) => (
+        <Jumbotron key={item.id} direction={item.direction}>
+          <p>Hello</p>
+        </Jumbotron>
+      ))}
+    </Jumbotron.Container>
+  );
 }
