@@ -4,6 +4,9 @@ export const Container = styled.div`
   display: flex;
   border-bottom: 8px solid #222;
 `;
+export const Item = styled.div``;
+export const Header = styled.div``;
+export const Body = styled.div``;
 
 export const Frame = styled.div`
   margin-bottom: 40px;
@@ -16,3 +19,5 @@ export const Inner = styled.div`
   max-width: 815px;
   margin: auto;
 `;
+
+export const Title = styled.h1``;
