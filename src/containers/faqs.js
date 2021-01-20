@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion } from "../components";
+import { Accordion, OptForm } from "../components";
 import faqsData from "../data/faqs.json";
 
 export function FaqsContainer() {
@@ -13,6 +13,15 @@ export function FaqsContainer() {
         </Accordion.Item>
       ))}
       <Accordion.Item></Accordion.Item>
+      <OptForm>
+        <OptForm.Text>
+          시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
+          입력하세요.
+        </OptForm.Text>
+        <OptForm.Input placeholder="이메일 주소" />
+        <OptForm.Button>30일 무료 이용</OptForm.Button>
+        <OptForm.Break />
+      </OptForm>
     </Accordion>
   );
 }
