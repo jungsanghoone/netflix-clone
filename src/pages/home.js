@@ -1,11 +1,13 @@
+import React from "react";
 import { FaqsContainer } from "containers/faqs";
 import { FooterContainer } from "containers/footer";
 import { JumbotronContainer } from "containers/jumbotron";
-import React from "react";
+import { HeaderContainer } from "containers/header";
 
 export default function Home() {
   return (
     <>
+      <HeaderContainer>HeaderContainer</HeaderContainer>
       <JumbotronContainer />
       <FaqsContainer />
       <FooterContainer />
