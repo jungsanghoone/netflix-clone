@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 100%;
   margin-top: 20px;
   flex-wrap: wrap;
-
+  word-break: keep-all;
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
@@ -18,8 +18,9 @@ export const Input = styled.input`
   width: 100%;
   border: 0;
   padding: 10px;
-  height: 70px;
+  height: 60px;
   box-sizing: border-box;
+  word-break: keep-all;
 `;
 
 export const Break = styled.div`
@@ -30,7 +31,7 @@ export const Break = styled.div`
 export const Button = styled.button`
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 60px;
   background: #e50914;
   color: white;
   text-transform: uppercase;
@@ -65,9 +66,26 @@ export const Text = styled.p`
   font-size: 19.2px;
   color: white;
   text-align: center;
-
+  word-break: keep-all;
   @media (max-width: 600px) {
     font-size: 16px;
     line-height: 22px;
   }
+`;
+
+export const Title = styled.h3`
+  @media only screen and (max-width: 549px) and (min-width: 400px),
+    only screen and (max-width: 949px) and (min-width: 550px) {
+    padding: 0 10%;
+  }
+  padding: 0 5%;
+  max-width: 450px;
+  margin: 0 auto;
+  font-weight: 400;
+  @media screen and (min-width: 740px) {
+    font-size: 23px;
+  }
+  font-size: 18px;
+  color: #fff;
+  word-break: keep-all;
 `;
